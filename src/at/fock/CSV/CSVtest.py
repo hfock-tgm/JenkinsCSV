@@ -1,10 +1,10 @@
 import unittest
-import CSVReader
+from at.fock.CSV.CSVReader import CSVReader
 
 class CSVtest(unittest.TestCase):
 
     def setUp(self):
-        self.csv = CSVReader.CSVReader('csv_file.csv')
+        self.csv = CSVReader('csv_file.csv')
 
     def test_load(self):
         try:
