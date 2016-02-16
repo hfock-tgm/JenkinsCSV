@@ -12,12 +12,13 @@ class CSVReader():
         return helpVar
 
     def saveCSV(self, text):
-        with open(self.filename, 'wb') as csvfile:
+        with open(self.filename, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
             zeilen = text.split("\n")
             for zeile in zeilen:
                 if zeile != "":
                     woerter = zeile.split(" ")
+                    print(woerter)
                     writer.writerow(woerter)
 
 if __name__ == "__main__":
