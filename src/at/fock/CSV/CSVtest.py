@@ -2,7 +2,7 @@ import unittest
 from at.fock.CSV.CSVReader import CSVReader
 
 class CSVtest(unittest.TestCase):
-
+#test
     def setUp(self):
         self.csv = CSVReader('csv_file.csv')
 
