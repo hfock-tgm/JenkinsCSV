@@ -22,7 +22,7 @@ class CSVReader():
 
 if __name__ == "__main__":
     print ("test")
-    test = CSVReader('../CSV/csv_file.csv')
+    test = CSVReader('csv_file.csv')
     test.saveCSV('1;2;3;4;')
     print (test.loadCSV())
     test.saveCSV('4;3;2;1;')
